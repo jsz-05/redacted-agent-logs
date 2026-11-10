@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-11-05T04:20:51.450420+00:00",
+  "scope": "Exploratory diagnostic suite, 48 matched pairs from six workflow templates and two underlying relation types (identity and domain membership); not prevalence or generalization estimate.",
+  "local_models": false,
+  "api_calls": 0,
+  "versions": {
+    "agento11y": "0.22.0",
+    "presidio-anonymizer": "2.2.366",
+    "langsmith": "0.14.17"
+  },
+  "cases_sha256": "31f13ad35394ef17c0201425a29ecda348a96ac6fef964b9a5804de6209888b4",
+  "modes": [
+    "raw",
+    "grafana_default",
+    "grafana_all_roles",
+    "langsmith_recipe",
+    "presidio_replace",
+    "presidio_hash_random",
+    "presidio_hash_stable",
+    "tokens_string_leaf",
+    "tokens_trace",
+    "tokens_structural",
+    "grafana_tokens_trace",
+    "grafana_tokens_structural"
+  ],
+  "native_boundary": "Grafana full SDK generation export plus tool execution spans captured in memory. No Grafana cloud evaluator or credentials. Other libraries called via native transformation APIs on the complete Generation representation.",
+  "detection": "Presidio receives exact email spans from regex for this controlled suite. This isolates transformation from recognition; no NLP model.",
+  "repair": "Established scoped pseudonyms and domain-preserving pseudonyms, not claimed as new algorithms. Presidio stable hash uses PUBLIC TEST salt only; not a production key recommendation.",
+  "nonidentifiability": "Opposite-label identical full representations force an error on at least one of the pair for any trace-only binary classifier; applies only to captured inputs and declared balanced pairs.",
+  "threat_model": "Authorized/unauthorized proposals and synthetic completed receipts. A downstream trace monitor sees only captured sanitized telemetry, not raw source records or a local secret map. No claim to bypass a pre-redaction deterministic authorization gate.",
+  "strong_controls": [
+    "Raw full export distinguishes cases",
+    "Stable trace-scoped tokens preserve identity",
+    "Stable tokens can lose domain membership",
+    "Metadata retained outside sanitization may restore distinction while leaking values",
+    "Input/input-output role handling tested separately"
+  ],
+  "revision": 3,
+  "normalization": "Capture full generation/workflow export and ReadableSpan JSON, instrumentation scope, dropped counts. Preserve raw capture. Normalize ONLY span start/end and event timestamps for content-view comparison; stable IDs supplied through public SDK hooks. No claim that timing side channels are equal.",
+  "repair_scope": "tokens_string_leaf means per string leaf (serialized tool JSON is one leaf); grafana_tokens_* persists one mapping across generation and tool-span sanitizer invocations for a conversation."
+}

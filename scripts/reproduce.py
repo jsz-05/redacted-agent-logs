@@ -1,0 +1,66 @@
+"""Check saved results, or rerun the sandbox experiments in a separate directory."""
+import argparse
+import json
+import os
+import shutil
+import subprocess
+import sys
+from pathlib import Path
+
+from paths import ROOT
+
+
+def run(script, results, logs, *args):
+    print(f"Running {script}", flush=True)
+    env = {**os.environ, "AUDIT_RESULTS_DIR": str(results)}
+    log = logs / (Path(script).stem + ("-" + args[-1] if args else "") + ".log")
+    with log.open("w") as out:
+        subprocess.run([sys.executable, str(ROOT / "scripts" / script), *args],
+                       cwd=ROOT, env=env, stdout=out, stderr=subprocess.STDOUT, check=True)
+
+
+def compare(saved, rerun):
+    for name in ("workbench_summary.json", "neutral_summary.json", "step_summary.json"):
+        before = json.loads((saved / name).read_text())["modes"]
+        after = json.loads((rerun / name).read_text())["modes"]
+        assert before == after, f"Replayed results differ: {name}"
+    for name in ("verification.json", "negative_controls.json", "langsmith_native_summary.json"):
+        assert json.loads((saved / name).read_text()) == json.loads((rerun / name).read_text()), name
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--rerun", action="store_true", help="reexecute the CPU-only sandbox and SDK experiments")
+    parser.add_argument("--output", type=Path, default=ROOT / "outputs" / "replay", help="new directory for rerun results")
+    args = parser.parse_args()
+    saved = ROOT / "results"
+    results = saved
+    logs = ROOT / "outputs" / "checks"
+    if args.rerun:
+        results = args.output.resolve()
+        if results.exists():
+            parser.error("Output already exists; choose a new --output directory.")
+        shutil.copytree(saved, results)
+        logs = results / "logs"
+    logs.mkdir(parents=True, exist_ok=True)
+    if args.rerun:
+        for script in ("audit.py", "verify.py", "negative_controls.py", "langsmith_native.py",
+                       "workbench_replay.py", "neutral_replay.py", "step_exports.py"):
+            run(script, results, logs)
+        compare(saved, results)
+        for script in ("analyze_auditor.py", "analyze_followup.py"):
+            run(script, results, logs)
+        for phase in ("extension", "economy"):
+            run("analyze_extension.py", results, logs, "--prefix", phase)
+    for script in ("check_saved_results.py", "check_workbench_archive.py"):
+        run(script, results, logs)
+    summary = json.loads((results / "neutral_summary.json").read_text())["modes"]
+    for sdk in ("grafana", "langsmith"):
+        mask, aliases = summary[sdk + ":mask"], summary[sdk + ":tokens"]
+        print(f"{sdk}: masks erase {mask['collisions']}/{mask['pairs']} differences; "
+              f"aliases erase {aliases['collisions']}/{aliases['pairs']}.")
+    print(f"Checks passed. Logs: {logs.relative_to(ROOT) if logs.is_relative_to(ROOT) else logs}")
+
+
+if __name__ == "__main__":
+    main()

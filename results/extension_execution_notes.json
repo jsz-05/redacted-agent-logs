@@ -1,0 +1,11 @@
+{
+  "note": "The experiment was specified before requests. This file records later execution details, not preregistration.",
+  "first_phase": "Four concurrent requests in batches; first8 used to check API/format compatibility, all retained.",
+  "interruption_after_attempt84": "OneQwen connection failure retained; no retry.",
+  "continuation": "Unsent requests resumed with eight concurrent requests in a rolling queue. Frozen model parameters and per-model warning comparisons unchanged. Every in-flight response is drained and written before stopping on an error.",
+  "second_interruption": "A GPT4.1 connection failure was retained. All in-flight requests were saved, then unsent requests resumed.",
+  "final_attempted": 432,
+  "valid_responses": 430,
+  "prompt_wording_note": "Descriptive protocol text said one sentence; the exact appended warning contains two. Frozen actual text and request hashes were preserved.",
+  "no_paid_requests_running": true
+}

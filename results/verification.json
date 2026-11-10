@@ -1,0 +1,130 @@
+{
+  "policy_results": {
+    "raw": {
+      "n": 96,
+      "correct_decisions": 96,
+      "wrong_decisions": 0,
+      "abstentions": 0,
+      "allowed_utility": 48,
+      "unsafe_allows": 0,
+      "notes": "Simple configuration-aware template policy checker; no LLM. Abstains if its required relation is not preserved. Not a general natural-language policy engine."
+    },
+    "grafana_default": {
+      "n": 96,
+      "correct_decisions": 0,
+      "wrong_decisions": 0,
+      "abstentions": 96,
+      "allowed_utility": 0,
+      "unsafe_allows": 0,
+      "notes": "Simple configuration-aware template policy checker; no LLM. Abstains if its required relation is not preserved. Not a general natural-language policy engine."
+    },
+    "grafana_all_roles": {
+      "n": 96,
+      "correct_decisions": 0,
+      "wrong_decisions": 0,
+      "abstentions": 96,
+      "allowed_utility": 0,
+      "unsafe_allows": 0,
+      "notes": "Simple configuration-aware template policy checker; no LLM. Abstains if its required relation is not preserved. Not a general natural-language policy engine."
+    },
+    "langsmith_recipe": {
+      "n": 96,
+      "correct_decisions": 0,
+      "wrong_decisions": 0,
+      "abstentions": 96,
+      "allowed_utility": 0,
+      "unsafe_allows": 0,
+      "notes": "Simple configuration-aware template policy checker; no LLM. Abstains if its required relation is not preserved. Not a general natural-language policy engine."
+    },
+    "presidio_replace": {
+      "n": 96,
+      "correct_decisions": 0,
+      "wrong_decisions": 0,
+      "abstentions": 96,
+      "allowed_utility": 0,
+      "unsafe_allows": 0,
+      "notes": "Simple configuration-aware template policy checker; no LLM. Abstains if its required relation is not preserved. Not a general natural-language policy engine."
+    },
+    "presidio_hash_random": {
+      "n": 96,
+      "correct_decisions": 0,
+      "wrong_decisions": 0,
+      "abstentions": 96,
+      "allowed_utility": 0,
+      "unsafe_allows": 0,
+      "notes": "Simple configuration-aware template policy checker; no LLM. Abstains if its required relation is not preserved. Not a general natural-language policy engine."
+    },
+    "presidio_hash_stable": {
+      "n": 96,
+      "correct_decisions": 80,
+      "wrong_decisions": 0,
+      "abstentions": 16,
+      "allowed_utility": 40,
+      "unsafe_allows": 0,
+      "notes": "Simple configuration-aware template policy checker; no LLM. Abstains if its required relation is not preserved. Not a general natural-language policy engine."
+    },
+    "tokens_string_leaf": {
+      "n": 96,
+      "correct_decisions": 16,
+      "wrong_decisions": 0,
+      "abstentions": 80,
+      "allowed_utility": 8,
+      "unsafe_allows": 0,
+      "notes": "Simple configuration-aware template policy checker; no LLM. Abstains if its required relation is not preserved. Not a general natural-language policy engine."
+    },
+    "tokens_trace": {
+      "n": 96,
+      "correct_decisions": 80,
+      "wrong_decisions": 0,
+      "abstentions": 16,
+      "allowed_utility": 40,
+      "unsafe_allows": 0,
+      "notes": "Simple configuration-aware template policy checker; no LLM. Abstains if its required relation is not preserved. Not a general natural-language policy engine."
+    },
+    "tokens_structural": {
+      "n": 96,
+      "correct_decisions": 96,
+      "wrong_decisions": 0,
+      "abstentions": 0,
+      "allowed_utility": 48,
+      "unsafe_allows": 0,
+      "notes": "Simple configuration-aware template policy checker; no LLM. Abstains if its required relation is not preserved. Not a general natural-language policy engine."
+    },
+    "grafana_tokens_trace": {
+      "n": 96,
+      "correct_decisions": 80,
+      "wrong_decisions": 0,
+      "abstentions": 16,
+      "allowed_utility": 40,
+      "unsafe_allows": 0,
+      "notes": "Simple configuration-aware template policy checker; no LLM. Abstains if its required relation is not preserved. Not a general natural-language policy engine."
+    },
+    "grafana_tokens_structural": {
+      "n": 96,
+      "correct_decisions": 96,
+      "wrong_decisions": 0,
+      "abstentions": 0,
+      "allowed_utility": 48,
+      "unsafe_allows": 0,
+      "notes": "Simple configuration-aware template policy checker; no LLM. Abstains if its required relation is not preserved. Not a general natural-language policy engine."
+    }
+  },
+  "hash_operator_checks": [
+    {
+      "stable_salt": false,
+      "same_source_identity_has_same_hash": false,
+      "different_source_identities_differ": true
+    },
+    {
+      "stable_salt": true,
+      "same_source_identity_has_same_hash": true,
+      "different_source_identities_differ": true
+    }
+  ],
+  "scope_checks": {
+    "same_identity_across_separate_record_calls": true,
+    "separate_conversation_mapping_objects": true
+  },
+  "metadata_control": "Redundant unsanitized metadata separates the pair while retaining raw identity. This defeats a collision claim if such metadata is available.",
+  "scope_limit": "The checker knows the template family and supported representation semantics; it is an oracle-validation tool, not a proposed general monitor."
+}

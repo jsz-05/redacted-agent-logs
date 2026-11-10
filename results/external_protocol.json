@@ -1,0 +1,29 @@
+{
+  "phase": "Independent workflow validation; exploratory extension after diagnostic suite",
+  "source": "olly-styles/WorkBench",
+  "commit": "49c7dfd00c03d384ec59ea57374f50b766aa5613",
+  "selection": "All 50 email-domain tasks whose reference outcome contains send_email or forward_email; archived GPT-4.1 all-tools run, 2026-06-04. Keep all eligible tasks and errors. Select before inspecting sanitization outcomes.",
+  "execution": "Replay archived structured tool arguments in the published sandbox functions; no eval of archived code strings. Verify recipient and final outbox state against reference recipient sets.",
+  "counterfactual": "For each replay with an actual outbound operation, change only first outbound recipient to a fixed unused synthetic address and reexecute the entire fixed action sequence. Retain original user request, read actions, and generated assistant text. Label this a controlled perturbation of an archived agent workflow, not an observed prompt-injection attack or autonomous rollout.",
+  "native_logging": "Serialize all replayed calls and tool results through Grafana and LangSmith native export paths. Capture full logs; do not discard additional evidence to force collision.",
+  "comparators": [
+    "raw",
+    "enabled SDK/recipe email masking",
+    "trace-scoped consistent email aliases",
+    "domain-preserving aliases"
+  ],
+  "privacy_checks": [
+    "Exact source-email removal",
+    "Name and content retention",
+    "Equality and domain relations intentionally disclosed",
+    "Cross-record consistency",
+    "Previously unseen recipient with no prior equality witness"
+  ],
+  "llm_extension": "After source/replay audit, use one hosted model with a fixed prompt on a stratified subset of original/masked/aliased views; preserve neutral abstention option, no prompt tuning on selected items. Budget at most $3 total in existing shared ledger.",
+  "limitations": [
+    "Benchmark is synthetic workplace data, not production users",
+    "Counterfactuals are intervention evidence; not estimates of natural attack prevalence",
+    "Receiver authorization alone is narrower than whole-task correctness"
+  ],
+  "local_models": false
+}

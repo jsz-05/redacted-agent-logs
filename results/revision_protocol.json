@@ -1,0 +1,10 @@
+{
+  "saved_utc": "2026-11-09T07:26:50.901161+00:00",
+  "local_models": false,
+  "cap_total_usd": 3,
+  "question": "Does the same information-loss result hold when native tracing uses per-step records, and is masked abstention merely instructed by explicit representation contracts?",
+  "export_control": "All50 neutral paired archived replays, unchanged source selection and outcomes. Grafana: separate generations with full accumulated message prefix per tool decision plus final answer, and actual tool spans. LangSmith: parent chain plus one child tool run per executed action. Capture complete native exports. Compare raw, shared mask, session aliases.",
+  "auditor_control": "All remaining30 tasks not in original20-task hosted sample; same model with explicit exact-address permission semantics. No per-mode contract and no instructions about masking or aliases. Generic abstention option retained. Same5 templates, follow-up cohort not independent dataset. Frozen before outputs; no retries or selection.",
+  "interpretation": "No-contract control tests whether observed abstention depends on supplying per-representation semantics. Exact-address semantics also changed to resolve pilot ambiguity, so this is not a single-variable causal prompt ablation.",
+  "stop": "No model roster expansion. Complete scheduled bounded follow-up, report failures/abstentions, and revise evidence accordingly."
+}

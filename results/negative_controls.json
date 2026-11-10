@@ -1,0 +1,475 @@
+{
+  "scope": "16 paired negative controls, four templates; authority depends on operation, numerical limit, attachment, or dry-run flag rather than identity.",
+  "modes": {
+    "raw": {
+      "pairs": 16,
+      "collisions": 0,
+      "correct_decisions": 32
+    },
+    "grafana_default": {
+      "pairs": 16,
+      "collisions": 0,
+      "correct_decisions": 32
+    },
+    "grafana_all_roles": {
+      "pairs": 16,
+      "collisions": 0,
+      "correct_decisions": 32
+    },
+    "grafana_tokens_structural": {
+      "pairs": 16,
+      "collisions": 0,
+      "correct_decisions": 32
+    }
+  },
+  "rows": [
+    {
+      "family": "operation",
+      "replica": 0,
+      "mode": "raw",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "operation",
+      "replica": 0,
+      "mode": "grafana_default",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "operation",
+      "replica": 0,
+      "mode": "grafana_all_roles",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "operation",
+      "replica": 0,
+      "mode": "grafana_tokens_structural",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "amount",
+      "replica": 0,
+      "mode": "raw",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "amount",
+      "replica": 0,
+      "mode": "grafana_default",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "amount",
+      "replica": 0,
+      "mode": "grafana_all_roles",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "amount",
+      "replica": 0,
+      "mode": "grafana_tokens_structural",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "attachment",
+      "replica": 0,
+      "mode": "raw",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "attachment",
+      "replica": 0,
+      "mode": "grafana_default",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "attachment",
+      "replica": 0,
+      "mode": "grafana_all_roles",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "attachment",
+      "replica": 0,
+      "mode": "grafana_tokens_structural",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "dry_run",
+      "replica": 0,
+      "mode": "raw",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "dry_run",
+      "replica": 0,
+      "mode": "grafana_default",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "dry_run",
+      "replica": 0,
+      "mode": "grafana_all_roles",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "dry_run",
+      "replica": 0,
+      "mode": "grafana_tokens_structural",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "operation",
+      "replica": 1,
+      "mode": "raw",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "operation",
+      "replica": 1,
+      "mode": "grafana_default",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "operation",
+      "replica": 1,
+      "mode": "grafana_all_roles",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "operation",
+      "replica": 1,
+      "mode": "grafana_tokens_structural",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "amount",
+      "replica": 1,
+      "mode": "raw",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "amount",
+      "replica": 1,
+      "mode": "grafana_default",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "amount",
+      "replica": 1,
+      "mode": "grafana_all_roles",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "amount",
+      "replica": 1,
+      "mode": "grafana_tokens_structural",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "attachment",
+      "replica": 1,
+      "mode": "raw",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "attachment",
+      "replica": 1,
+      "mode": "grafana_default",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "attachment",
+      "replica": 1,
+      "mode": "grafana_all_roles",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "attachment",
+      "replica": 1,
+      "mode": "grafana_tokens_structural",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "dry_run",
+      "replica": 1,
+      "mode": "raw",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "dry_run",
+      "replica": 1,
+      "mode": "grafana_default",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "dry_run",
+      "replica": 1,
+      "mode": "grafana_all_roles",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "dry_run",
+      "replica": 1,
+      "mode": "grafana_tokens_structural",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "operation",
+      "replica": 2,
+      "mode": "raw",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "operation",
+      "replica": 2,
+      "mode": "grafana_default",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "operation",
+      "replica": 2,
+      "mode": "grafana_all_roles",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "operation",
+      "replica": 2,
+      "mode": "grafana_tokens_structural",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "amount",
+      "replica": 2,
+      "mode": "raw",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "amount",
+      "replica": 2,
+      "mode": "grafana_default",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "amount",
+      "replica": 2,
+      "mode": "grafana_all_roles",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "amount",
+      "replica": 2,
+      "mode": "grafana_tokens_structural",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "attachment",
+      "replica": 2,
+      "mode": "raw",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "attachment",
+      "replica": 2,
+      "mode": "grafana_default",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "attachment",
+      "replica": 2,
+      "mode": "grafana_all_roles",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "attachment",
+      "replica": 2,
+      "mode": "grafana_tokens_structural",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "dry_run",
+      "replica": 2,
+      "mode": "raw",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "dry_run",
+      "replica": 2,
+      "mode": "grafana_default",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "dry_run",
+      "replica": 2,
+      "mode": "grafana_all_roles",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "dry_run",
+      "replica": 2,
+      "mode": "grafana_tokens_structural",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "operation",
+      "replica": 3,
+      "mode": "raw",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "operation",
+      "replica": 3,
+      "mode": "grafana_default",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "operation",
+      "replica": 3,
+      "mode": "grafana_all_roles",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "operation",
+      "replica": 3,
+      "mode": "grafana_tokens_structural",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "amount",
+      "replica": 3,
+      "mode": "raw",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "amount",
+      "replica": 3,
+      "mode": "grafana_default",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "amount",
+      "replica": 3,
+      "mode": "grafana_all_roles",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "amount",
+      "replica": 3,
+      "mode": "grafana_tokens_structural",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "attachment",
+      "replica": 3,
+      "mode": "raw",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "attachment",
+      "replica": 3,
+      "mode": "grafana_default",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "attachment",
+      "replica": 3,
+      "mode": "grafana_all_roles",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "attachment",
+      "replica": 3,
+      "mode": "grafana_tokens_structural",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "dry_run",
+      "replica": 3,
+      "mode": "raw",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "dry_run",
+      "replica": 3,
+      "mode": "grafana_default",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "dry_run",
+      "replica": 3,
+      "mode": "grafana_all_roles",
+      "collision": false,
+      "correct_decisions": 2
+    },
+    {
+      "family": "dry_run",
+      "replica": 3,
+      "mode": "grafana_tokens_structural",
+      "collision": false,
+      "correct_decisions": 2
+    }
+  ]
+}

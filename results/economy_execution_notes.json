@@ -1,0 +1,17 @@
+{
+  "local_models": false,
+  "additional_cap_usd": 0.5,
+  "selection": "User selected both models before any outputs. Same four conditions and 30 task pairs as earlier extension.",
+  "settings": "Medium reasoning; max_tokens4096; temperature omitted because unsupported; strict verdict schema.",
+  "routing": "Direct Anthropic and OpenAI rejected four setup calls before generation under ZDR. Azure rejected one Haiku setup call. All five routing errors preserved under economy_setup_attempts; unresolved reservations remain in budget. Haiku switched to Google Vertex/global before any Haiku verdict. Luna uses Azure.",
+  "protocol_timing": "Original model selection and requests were saved before calls in economy_setup_attempts/direct_protocol.json. Azure snapshot preserves the next configuration. Final protocol updates only provider routes, and includes three already completed Luna outputs unchanged; those IDs are never reissued. Final protocol timestamp alone is not prospective registration.",
+  "scoring": "368 unique inference requests map to480 scored records. Identical inputs share one cached response. Earlier setup errors are routing failures with no model verdict, retained separately. Any failure on a routed scored request remains missing and is not retried.",
+  "order": "Seed202611092 determines the same model/case ordering through route amendments. Setup pilots run the first pending jobs. Main run resumes unsent jobs with8workers.",
+  "privacy": "ZDR and data_collection deny retained throughout. No tracing cloud upload.",
+  "caveat": "Exploratory deployment replication on previously inspected data; no equal-compute or universal model ranking.",
+  "requests_completed": 368,
+  "valid_responses": 367,
+  "missing": "One Luna raw-log ConnectionError retained without retry",
+  "reported_cost_usd": 0.08141825,
+  "conservative_additional_usd": 0.09912095
+}

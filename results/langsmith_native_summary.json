@@ -1,0 +1,90 @@
+{
+  "boundary": "Full native Client.create_run JSON request body, intercepted by an in-memory requests transport. No timestamp normalization needed: fixed public fields. No cloud service contacted. No default-setting claim: mask is the official documented recipe.",
+  "modes": {
+    "raw": {
+      "pairs": 48,
+      "collisions": 0,
+      "colliding_pairs": []
+    },
+    "mask": {
+      "pairs": 48,
+      "collisions": 48,
+      "colliding_pairs": [
+        "exact_recipient:0",
+        "recipient_set:0",
+        "sharing_principal:0",
+        "separation_of_duties:0",
+        "domain_membership:0",
+        "excluded_recipient:0",
+        "exact_recipient:1",
+        "recipient_set:1",
+        "sharing_principal:1",
+        "separation_of_duties:1",
+        "domain_membership:1",
+        "excluded_recipient:1",
+        "exact_recipient:2",
+        "recipient_set:2",
+        "sharing_principal:2",
+        "separation_of_duties:2",
+        "domain_membership:2",
+        "excluded_recipient:2",
+        "exact_recipient:3",
+        "recipient_set:3",
+        "sharing_principal:3",
+        "separation_of_duties:3",
+        "domain_membership:3",
+        "excluded_recipient:3",
+        "exact_recipient:4",
+        "recipient_set:4",
+        "sharing_principal:4",
+        "separation_of_duties:4",
+        "domain_membership:4",
+        "excluded_recipient:4",
+        "exact_recipient:5",
+        "recipient_set:5",
+        "sharing_principal:5",
+        "separation_of_duties:5",
+        "domain_membership:5",
+        "excluded_recipient:5",
+        "exact_recipient:6",
+        "recipient_set:6",
+        "sharing_principal:6",
+        "separation_of_duties:6",
+        "domain_membership:6",
+        "excluded_recipient:6",
+        "exact_recipient:7",
+        "recipient_set:7",
+        "sharing_principal:7",
+        "separation_of_duties:7",
+        "domain_membership:7",
+        "excluded_recipient:7"
+      ]
+    },
+    "tokens": {
+      "pairs": 48,
+      "collisions": 8,
+      "colliding_pairs": [
+        "domain_membership:0",
+        "domain_membership:1",
+        "domain_membership:2",
+        "domain_membership:3",
+        "domain_membership:4",
+        "domain_membership:5",
+        "domain_membership:6",
+        "domain_membership:7"
+      ]
+    },
+    "structural": {
+      "pairs": 48,
+      "collisions": 0,
+      "colliding_pairs": []
+    }
+  },
+  "raw_metadata_control": {
+    "collides": true,
+    "retains_original_target": false
+  },
+  "development_note": "Initial metadata-control assertion expected Grafana behavior (metadata unmasked); inspection showed native LangSmith also anonymizes metadata. Corrected assertion to observed documented scope; main collision assertions passed before this correction. No paid requests.",
+  "cost_usd": 0,
+  "local_models": false
+}
