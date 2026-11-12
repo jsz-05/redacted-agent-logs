@@ -1,0 +1,93 @@
+{
+  "distinct_pairs": 36,
+  "families": [
+    "direct",
+    "dotdot",
+    "symlink",
+    "hardlink",
+    "symlink_parent",
+    "hidden_binding"
+  ],
+  "aggregate": {
+    "same:raw": {
+      "pairs": 18,
+      "collisions": 3
+    },
+    "same:mask": {
+      "pairs": 18,
+      "collisions": 18
+    },
+    "same:literal": {
+      "pairs": 18,
+      "collisions": 12
+    },
+    "same:lexical": {
+      "pairs": 18,
+      "collisions": 12
+    },
+    "same:realpath": {
+      "pairs": 18,
+      "collisions": 3
+    },
+    "same:stat": {
+      "pairs": 18,
+      "collisions": 0
+    },
+    "same:literal_receipt": {
+      "pairs": 18,
+      "collisions": 0
+    },
+    "same:raw_receipt": {
+      "pairs": 18,
+      "collisions": 0
+    },
+    "different:raw": {
+      "pairs": 18,
+      "collisions": 0
+    },
+    "different:mask": {
+      "pairs": 18,
+      "collisions": 0
+    },
+    "different:literal": {
+      "pairs": 18,
+      "collisions": 0
+    },
+    "different:lexical": {
+      "pairs": 18,
+      "collisions": 0
+    },
+    "different:realpath": {
+      "pairs": 18,
+      "collisions": 0
+    },
+    "different:stat": {
+      "pairs": 18,
+      "collisions": 0
+    },
+    "different:literal_receipt": {
+      "pairs": 18,
+      "collisions": 0
+    },
+    "different:raw_receipt": {
+      "pairs": 18,
+      "collisions": 0
+    }
+  },
+  "same_record_checkers": {
+    "stat": {
+      "records": 72,
+      "correct": 72
+    },
+    "literal_receipt": {
+      "records": 72,
+      "correct": 72
+    },
+    "raw_receipt": {
+      "records": 72,
+      "correct": 72
+    }
+  },
+  "counting_unit": "36 designed pairs, not 576 independent workflows; each pair is reexecuted under 8 logging configurations.",
+  "scope": "Object-based authorization on a static local filesystem. Path-scoped policies and concurrent changes are untested."
+}

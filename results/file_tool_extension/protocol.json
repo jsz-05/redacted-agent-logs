@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-11",
+  "status": "Exploratory transfer experiment, written before executing this extension; not an externally preregistered study",
+  "question": "Which file-identity distinctions survive privacy filtering when real file reads are instrumented during execution?",
+  "claim_to_test": "Literal aliases and lexical path normalization can both lose distinctions relevant to object-based file authorization. Resolved-path aliases and opened-object receipts have different coverage.",
+  "policy": "Read only the filesystem object named by the approved path. Symlinks and hard links to that same object are authorized. This is object-based authorization, not a directory-confinement policy.",
+  "strongest_alternative": "A log may never have recorded the filesystem bindings needed for authorization. Such missing evidence must not be attributed to filtering. Different file contents may also retain a distinction despite path filtering.",
+  "families": ["direct", "dotdot", "symlink", "hardlink", "symlink_parent", "hidden_binding"],
+  "identifier_instances": 3,
+  "content_conditions": ["same", "different"],
+  "representations": ["raw", "mask", "literal", "lexical", "realpath", "literal_receipt", "raw_receipt"],
+  "baselines": {
+    "mask": "One shared path placeholder",
+    "literal": "Per-execution consistent aliases of literal path strings",
+    "lexical": "os.path.normpath before consistent aliasing",
+    "realpath": "Path.resolve(strict=True) against the unchanged live filesystem before aliasing",
+    "literal_receipt": "Literal path aliases plus aliases of approved and opened (device,inode) identifiers, captured with fstat",
+    "raw_receipt": "Same additional identity fields without anonymization, isolating instrumentation from filtering"
+  },
+  "measurement": "Compare complete captured LangSmith POST/PATCH bodies. Count exact opposite-outcome collisions separately for each family and content condition. Do not equate distinct records with correct decisions.",
+  "checker": "For receipt conditions only, compare approved-object and opened-object fields in the exported records. No gold label, path-to-object map, or live filesystem access is available to this checker.",
+  "controls": ["Byte-identical versus different file contents", "Hidden-binding pair with identical arguments but a changed symlink target", "Raw plus identity receipts", "Actual bytes and fstat identifiers from the descriptor used to read", "No network transport; fail on any unexpected HTTP URL", "No concurrent filesystem mutation or race claims"],
+  "cheapest_pilot": "One identifier instance of every family, both content conditions, all representations",
+  "inclusion_rule": "Add a concise paper result only if this tests a meaningful boundary beyond email case normalization. Retain every family, control, and unfavorable result in the artifact. A raw-log collision is an instrumentation gap. If this only repeats the existing finding without clarifying a deployment choice, leave it outside the manuscript.",
+  "stop_rule": "Do not expand model count or sample size to make a routine or ambiguous result look stronger. Stop after the planned three identifier instances and controls if the harness is valid.",
+  "cost_usd_limit": 0,
+  "model_calls": 0,
+  "local_models": false,
+  "sources": ["https://docs.python.org/3/library/pathlib.html", "https://docs.langchain.com/langsmith/mask-inputs-outputs"]
+}

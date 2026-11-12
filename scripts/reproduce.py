@@ -14,7 +14,7 @@ def run(script, results, logs, *args):
     print(f"Running {script}", flush=True)
     env = {**os.environ, "AUDIT_RESULTS_DIR": str(results)}
     suffix = "-" + args[-1] if len(args) == 2 and args[0] == '--prefix' else ''
-    log = logs / (Path(script).stem + suffix + ".log")
+    log = logs / (script.removesuffix('.py').replace('/', '-') + suffix + ".log")
     with log.open("w") as out:
         subprocess.run([sys.executable, str(ROOT / "scripts" / script), *args],
                        cwd=ROOT, env=env, stdout=out, stderr=subprocess.STDOUT, check=True)
@@ -29,6 +29,8 @@ def compare(saved, rerun):
         assert json.loads((saved / name).read_text()) == json.loads((rerun / name).read_text()), name
     for name in ('canonical_identity/full/summary.json', 'canonical_identity/controls/summary.json'):
         assert json.loads((saved/name).read_text()) == json.loads((rerun/name).read_text()), name
+    name = 'file_tool_extension/full_with_stat/summary.json'
+    assert json.loads((saved/name).read_text())['modes'] == json.loads((rerun/name).read_text())['modes'], name
 
 
 def main():
@@ -55,6 +57,10 @@ def main():
             shutil.rmtree(results/'canonical_identity'/folder)
         run('canonical_identity/run.py', results, logs, '--output', str(results/'canonical_identity/full'))
         run('canonical_identity/run_controls.py', results, logs)
+        file_results = results/'file_tool_extension/full_with_stat'
+        shutil.rmtree(file_results)
+        run('file_tool_extension/run.py', results, logs, '--output', str(file_results))
+        run('file_tool_extension/analyze.py', results, logs, '--results', str(file_results))
         run('analyze_agentdojo_pilot.py', results, logs)
         compare(saved, results)
         for script in ("analyze_auditor.py", "analyze_followup.py"):
@@ -63,12 +69,15 @@ def main():
             run("analyze_extension.py", results, logs, "--prefix", phase)
     for script in ("check_saved_results.py", "check_workbench_archive.py", "canonical_identity/verify_saved.py"):
         run(script, results, logs)
+    run('file_tool_extension/verify_saved.py', results, logs,
+        '--results', str(results/'file_tool_extension/full_with_stat'))
     summary = json.loads((results / "neutral_summary.json").read_text())["modes"]
     for sdk in ("grafana", "langsmith"):
         mask, aliases = summary[sdk + ":mask"], summary[sdk + ":tokens"]
         print(f"{sdk}: masks erase {mask['collisions']}/{mask['pairs']} differences; "
               f"aliases erase {aliases['collisions']}/{aliases['pairs']}.")
     print('Backend identity controls: 50/50 literal-alias collisions; both repairs give 0/50.')
+    print('File-tool check: 36 designed pairs; all saved native exports and object-identity decisions verified.')
     print(f"Checks passed. Logs: {logs.relative_to(ROOT) if logs.is_relative_to(ROOT) else logs}")
 
 

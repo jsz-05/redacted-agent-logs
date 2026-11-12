@@ -1,0 +1,599 @@
+{
+  "families": [
+    "direct",
+    "dotdot",
+    "symlink",
+    "hardlink",
+    "symlink_parent",
+    "hidden_binding"
+  ],
+  "instances": 3,
+  "distinct_pairs": 36,
+  "executed_reads": 576,
+  "native_events": 1152,
+  "modes": {
+    "direct:same:raw": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "direct:same:mask": {
+      "pairs": 3,
+      "collisions": 3,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "direct:same:literal": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "direct:same:lexical": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "direct:same:realpath": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "direct:same:stat": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "direct:same:literal_receipt": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 6,
+      "checker_records": 6
+    },
+    "direct:same:raw_receipt": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 6,
+      "checker_records": 6
+    },
+    "direct:different:raw": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "direct:different:mask": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "direct:different:literal": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "direct:different:lexical": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "direct:different:realpath": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "direct:different:stat": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "direct:different:literal_receipt": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 6,
+      "checker_records": 6
+    },
+    "direct:different:raw_receipt": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 6,
+      "checker_records": 6
+    },
+    "dotdot:same:raw": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "dotdot:same:mask": {
+      "pairs": 3,
+      "collisions": 3,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "dotdot:same:literal": {
+      "pairs": 3,
+      "collisions": 3,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "dotdot:same:lexical": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "dotdot:same:realpath": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "dotdot:same:stat": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "dotdot:same:literal_receipt": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 6,
+      "checker_records": 6
+    },
+    "dotdot:same:raw_receipt": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 6,
+      "checker_records": 6
+    },
+    "dotdot:different:raw": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "dotdot:different:mask": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "dotdot:different:literal": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "dotdot:different:lexical": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "dotdot:different:realpath": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "dotdot:different:stat": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "dotdot:different:literal_receipt": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 6,
+      "checker_records": 6
+    },
+    "dotdot:different:raw_receipt": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 6,
+      "checker_records": 6
+    },
+    "symlink:same:raw": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "symlink:same:mask": {
+      "pairs": 3,
+      "collisions": 3,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "symlink:same:literal": {
+      "pairs": 3,
+      "collisions": 3,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "symlink:same:lexical": {
+      "pairs": 3,
+      "collisions": 3,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "symlink:same:realpath": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "symlink:same:stat": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "symlink:same:literal_receipt": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 6,
+      "checker_records": 6
+    },
+    "symlink:same:raw_receipt": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 6,
+      "checker_records": 6
+    },
+    "symlink:different:raw": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "symlink:different:mask": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "symlink:different:literal": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "symlink:different:lexical": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "symlink:different:realpath": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "symlink:different:stat": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "symlink:different:literal_receipt": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 6,
+      "checker_records": 6
+    },
+    "symlink:different:raw_receipt": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 6,
+      "checker_records": 6
+    },
+    "hardlink:same:raw": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "hardlink:same:mask": {
+      "pairs": 3,
+      "collisions": 3,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "hardlink:same:literal": {
+      "pairs": 3,
+      "collisions": 3,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "hardlink:same:lexical": {
+      "pairs": 3,
+      "collisions": 3,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "hardlink:same:realpath": {
+      "pairs": 3,
+      "collisions": 3,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "hardlink:same:stat": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "hardlink:same:literal_receipt": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 6,
+      "checker_records": 6
+    },
+    "hardlink:same:raw_receipt": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 6,
+      "checker_records": 6
+    },
+    "hardlink:different:raw": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "hardlink:different:mask": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "hardlink:different:literal": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "hardlink:different:lexical": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "hardlink:different:realpath": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "hardlink:different:stat": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "hardlink:different:literal_receipt": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 6,
+      "checker_records": 6
+    },
+    "hardlink:different:raw_receipt": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 6,
+      "checker_records": 6
+    },
+    "symlink_parent:same:raw": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "symlink_parent:same:mask": {
+      "pairs": 3,
+      "collisions": 3,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "symlink_parent:same:literal": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "symlink_parent:same:lexical": {
+      "pairs": 3,
+      "collisions": 3,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "symlink_parent:same:realpath": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "symlink_parent:same:stat": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "symlink_parent:same:literal_receipt": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 6,
+      "checker_records": 6
+    },
+    "symlink_parent:same:raw_receipt": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 6,
+      "checker_records": 6
+    },
+    "symlink_parent:different:raw": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "symlink_parent:different:mask": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "symlink_parent:different:literal": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "symlink_parent:different:lexical": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "symlink_parent:different:realpath": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "symlink_parent:different:stat": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "symlink_parent:different:literal_receipt": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 6,
+      "checker_records": 6
+    },
+    "symlink_parent:different:raw_receipt": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 6,
+      "checker_records": 6
+    },
+    "hidden_binding:same:raw": {
+      "pairs": 3,
+      "collisions": 3,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "hidden_binding:same:mask": {
+      "pairs": 3,
+      "collisions": 3,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "hidden_binding:same:literal": {
+      "pairs": 3,
+      "collisions": 3,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "hidden_binding:same:lexical": {
+      "pairs": 3,
+      "collisions": 3,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "hidden_binding:same:realpath": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "hidden_binding:same:stat": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "hidden_binding:same:literal_receipt": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 6,
+      "checker_records": 6
+    },
+    "hidden_binding:same:raw_receipt": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 6,
+      "checker_records": 6
+    },
+    "hidden_binding:different:raw": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "hidden_binding:different:mask": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "hidden_binding:different:literal": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "hidden_binding:different:lexical": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "hidden_binding:different:realpath": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "hidden_binding:different:stat": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 0,
+      "checker_records": 0
+    },
+    "hidden_binding:different:literal_receipt": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 6,
+      "checker_records": 6
+    },
+    "hidden_binding:different:raw_receipt": {
+      "pairs": 3,
+      "collisions": 0,
+      "checker_correct": 6,
+      "checker_records": 6
+    }
+  },
+  "api_calls": 0,
+  "cost_usd": 0,
+  "local_models": false,
+  "python": "3.12.12",
+  "platform": "Darwin",
+  "langsmith": "0.14.17",
+  "scope": "Authored exploratory file-tool cases. Identifier instances and representation reruns are not independent workflows. Lexical and realpath transformations are standard baselines. Realpath and object receipts consult state that ordinary raw logs do not contain. Collisions do not measure attack frequency."
+}

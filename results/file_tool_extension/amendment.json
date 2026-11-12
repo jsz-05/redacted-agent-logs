@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-11",
+  "stage": "After the initial pilot and three-instance execution, before manuscript inclusion",
+  "change": "Add stat-based aliases as an established, stronger identity baseline. Replace each path by the (device,inode) of the file it currently names before assigning a PATH alias.",
+  "reason": "Path.resolve does not identify hard links. Comparing only against that baseline could misleadingly imply that extra receipt fields are necessary. Direct object-based normalization may perform just as well in an unchanged filesystem.",
+  "interpretation": "Both stat-based aliases and added identity receipts consult information absent from ordinary raw logs. Neither is a privacy-filter-only repair for missing evidence. No race or persistent-identity guarantee is tested.",
+  "preserved": ["pilot/", "full/", "recheck/"],
+  "primary_extended_run": "full_with_stat/",
+  "extra_model_cost_usd": 0
+}

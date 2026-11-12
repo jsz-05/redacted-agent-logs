@@ -2,7 +2,8 @@
 
 Replication code for the paper by Jeffrey Zhou and K. Mani Chandy.
 We test whether filtering email addresses out of an agent's log also hides
-evidence that it sent a message to the wrong person.
+evidence that it sent a message to the wrong person. A smaller extension tests
+file identity using actual reads in a temporary directory.
 
 ## Check the results
 
@@ -44,6 +45,24 @@ To recreate the four figures from the saved results:
 ```
 
 The figures are written to `outputs/figures/`.
+
+## File-tool check
+
+The included file experiment records actual reads through LangSmith, with no
+model or network calls. It compares literal path aliases, path normalization,
+filesystem-aware aliases, and object-identity receipts. The controls retain
+cases where the raw log already lacks evidence and where different file contents
+keep the records distinguishable.
+
+```sh
+python3 scripts/file_tool_extension/verify_saved.py
+.venv/bin/python scripts/file_tool_extension/run.py --output outputs/file-tool-rerun
+python3 scripts/file_tool_extension/verify_saved.py --results outputs/file-tool-rerun
+```
+
+There are 36 designed pairs across six cases, repeated under eight logging
+configurations. They are not independent production workflows. The setup,
+protocol amendment, and all results are in `results/file_tool_extension/`.
 
 ## Optional model calls
 
