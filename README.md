@@ -15,7 +15,11 @@ python3 scripts/reproduce.py
 
 The checks recover 47 identical original/modified log pairs out of 50 when
 addresses are masked, for both Grafana and LangSmith. Consistent aliases
-preserve all 50 differences. They also verify the saved model scores,
+preserve all 50 differences in that test. A second experiment changes only
+the spelling of an authorized address. Literal aliases then erase all 50
+differences from sends to new, unauthorized recipients. Aliasing the backend
+identity, or adding its resolved destination to the receipt before aliasing,
+repairs those cases. They also verify the saved model scores,
 including abstentions and failed requests.
 
 ## Rerun the experiments
@@ -31,11 +35,12 @@ logs through the logging libraries. It runs on CPU, sends no real emails,
 and makes no model calls. New results go in `outputs/replay/`; the supplied
 results stay unchanged. To repeat it, choose a new directory with `--output`.
 
-To recreate the three figures from the saved results:
+To recreate the four figures from the saved results:
 
 ```sh
 .venv/bin/python scripts/make_figures.py
 .venv/bin/python scripts/make_extension_chart.py
+.venv/bin/python scripts/make_identity_figure.py
 ```
 
 The figures are written to `outputs/figures/`.
@@ -59,9 +64,15 @@ protocols; fresh responses can differ, and a cap may stop a run early.
 
 - `scripts/`: experiments, scoring, checks, and figure code.
 - `results/`: recorded exports, prompts, responses, and experiment specifications.
+  `canonical_identity/` contains the spelling experiment and controls.
+  `agentdojo_extension/` contains a 24-trace exploratory pilot, with all
+  annotations and unresolved cases retained. Its email-only mask leaves the
+  eight observed out-of-scope actions identifiable.
 - `data/WorkBench/`: the sandbox source and data needed for replay, from
   [WorkBench](https://github.com/olly-styles/WorkBench/tree/49c7dfd00c03d384ec59ea57374f50b766aa5613).
-  Its MIT license is included.
+  Its MIT license is included. The AgentDojo pilot uses commit
+  [089ed468cf3e](https://github.com/ethz-spylab/agentdojo/tree/089ed468cf3ed0322acc66b0211f26d9d90dbf60);
+  its MIT license is included with the pilot records.
 
 The tasks describe a synthetic workplace. We change one recipient in each
 archived action sequence and hold the other actions fixed. These experiments

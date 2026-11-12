@@ -1,0 +1,218 @@
+[
+  {
+    "a": "alex@atlas.com",
+    "b": "alex@atlas.com",
+    "backend_equal": true,
+    "canonical_equal": true
+  },
+  {
+    "a": "alex@atlas.com",
+    "b": "ALEX@ATLAS.COM",
+    "backend_equal": true,
+    "canonical_equal": true
+  },
+  {
+    "a": "alex@atlas.com",
+    "b": "alex+tag@atlas.com",
+    "backend_equal": false,
+    "canonical_equal": false
+  },
+  {
+    "a": "alex@atlas.com",
+    "b": "alex+other@atlas.com",
+    "backend_equal": false,
+    "canonical_equal": false
+  },
+  {
+    "a": "alex@atlas.com",
+    "b": "other@atlas.com",
+    "backend_equal": false,
+    "canonical_equal": false
+  },
+  {
+    "a": "alex@atlas.com",
+    "b": "alex@other.example",
+    "backend_equal": false,
+    "canonical_equal": false
+  },
+  {
+    "a": "ALEX@ATLAS.COM",
+    "b": "alex@atlas.com",
+    "backend_equal": true,
+    "canonical_equal": true
+  },
+  {
+    "a": "ALEX@ATLAS.COM",
+    "b": "ALEX@ATLAS.COM",
+    "backend_equal": true,
+    "canonical_equal": true
+  },
+  {
+    "a": "ALEX@ATLAS.COM",
+    "b": "alex+tag@atlas.com",
+    "backend_equal": false,
+    "canonical_equal": false
+  },
+  {
+    "a": "ALEX@ATLAS.COM",
+    "b": "alex+other@atlas.com",
+    "backend_equal": false,
+    "canonical_equal": false
+  },
+  {
+    "a": "ALEX@ATLAS.COM",
+    "b": "other@atlas.com",
+    "backend_equal": false,
+    "canonical_equal": false
+  },
+  {
+    "a": "ALEX@ATLAS.COM",
+    "b": "alex@other.example",
+    "backend_equal": false,
+    "canonical_equal": false
+  },
+  {
+    "a": "alex+tag@atlas.com",
+    "b": "alex@atlas.com",
+    "backend_equal": false,
+    "canonical_equal": false
+  },
+  {
+    "a": "alex+tag@atlas.com",
+    "b": "ALEX@ATLAS.COM",
+    "backend_equal": false,
+    "canonical_equal": false
+  },
+  {
+    "a": "alex+tag@atlas.com",
+    "b": "alex+tag@atlas.com",
+    "backend_equal": true,
+    "canonical_equal": true
+  },
+  {
+    "a": "alex+tag@atlas.com",
+    "b": "alex+other@atlas.com",
+    "backend_equal": false,
+    "canonical_equal": false
+  },
+  {
+    "a": "alex+tag@atlas.com",
+    "b": "other@atlas.com",
+    "backend_equal": false,
+    "canonical_equal": false
+  },
+  {
+    "a": "alex+tag@atlas.com",
+    "b": "alex@other.example",
+    "backend_equal": false,
+    "canonical_equal": false
+  },
+  {
+    "a": "alex+other@atlas.com",
+    "b": "alex@atlas.com",
+    "backend_equal": false,
+    "canonical_equal": false
+  },
+  {
+    "a": "alex+other@atlas.com",
+    "b": "ALEX@ATLAS.COM",
+    "backend_equal": false,
+    "canonical_equal": false
+  },
+  {
+    "a": "alex+other@atlas.com",
+    "b": "alex+tag@atlas.com",
+    "backend_equal": false,
+    "canonical_equal": false
+  },
+  {
+    "a": "alex+other@atlas.com",
+    "b": "alex+other@atlas.com",
+    "backend_equal": true,
+    "canonical_equal": true
+  },
+  {
+    "a": "alex+other@atlas.com",
+    "b": "other@atlas.com",
+    "backend_equal": false,
+    "canonical_equal": false
+  },
+  {
+    "a": "alex+other@atlas.com",
+    "b": "alex@other.example",
+    "backend_equal": false,
+    "canonical_equal": false
+  },
+  {
+    "a": "other@atlas.com",
+    "b": "alex@atlas.com",
+    "backend_equal": false,
+    "canonical_equal": false
+  },
+  {
+    "a": "other@atlas.com",
+    "b": "ALEX@ATLAS.COM",
+    "backend_equal": false,
+    "canonical_equal": false
+  },
+  {
+    "a": "other@atlas.com",
+    "b": "alex+tag@atlas.com",
+    "backend_equal": false,
+    "canonical_equal": false
+  },
+  {
+    "a": "other@atlas.com",
+    "b": "alex+other@atlas.com",
+    "backend_equal": false,
+    "canonical_equal": false
+  },
+  {
+    "a": "other@atlas.com",
+    "b": "other@atlas.com",
+    "backend_equal": true,
+    "canonical_equal": true
+  },
+  {
+    "a": "other@atlas.com",
+    "b": "alex@other.example",
+    "backend_equal": false,
+    "canonical_equal": false
+  },
+  {
+    "a": "alex@other.example",
+    "b": "alex@atlas.com",
+    "backend_equal": false,
+    "canonical_equal": false
+  },
+  {
+    "a": "alex@other.example",
+    "b": "ALEX@ATLAS.COM",
+    "backend_equal": false,
+    "canonical_equal": false
+  },
+  {
+    "a": "alex@other.example",
+    "b": "alex+tag@atlas.com",
+    "backend_equal": false,
+    "canonical_equal": false
+  },
+  {
+    "a": "alex@other.example",
+    "b": "alex+other@atlas.com",
+    "backend_equal": false,
+    "canonical_equal": false
+  },
+  {
+    "a": "alex@other.example",
+    "b": "other@atlas.com",
+    "backend_equal": false,
+    "canonical_equal": false
+  },
+  {
+    "a": "alex@other.example",
+    "b": "alex@other.example",
+    "backend_equal": true,
+    "canonical_equal": true
+  }
+]

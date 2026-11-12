@@ -1,0 +1,111 @@
+{
+  "tasks": 50,
+  "selected_ids": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79
+  ],
+  "families": 5,
+  "original_variant_outboxes_identical": 50,
+  "original_variant_receipts_identical": 50,
+  "modes": {
+    "grafana:raw": {
+      "tasks": 50,
+      "variant_unauthorized_collisions": 0,
+      "original_unauthorized_collisions": 0,
+      "original_variant_equal": 0
+    },
+    "grafana:mask": {
+      "tasks": 50,
+      "variant_unauthorized_collisions": 50,
+      "original_unauthorized_collisions": 50,
+      "original_variant_equal": 50
+    },
+    "grafana:tokens": {
+      "tasks": 50,
+      "variant_unauthorized_collisions": 50,
+      "original_unauthorized_collisions": 0,
+      "original_variant_equal": 0
+    },
+    "grafana:canonical_tokens": {
+      "tasks": 50,
+      "variant_unauthorized_collisions": 0,
+      "original_unauthorized_collisions": 0,
+      "original_variant_equal": 50
+    },
+    "langsmith:raw": {
+      "tasks": 50,
+      "variant_unauthorized_collisions": 0,
+      "original_unauthorized_collisions": 0,
+      "original_variant_equal": 0
+    },
+    "langsmith:mask": {
+      "tasks": 50,
+      "variant_unauthorized_collisions": 50,
+      "original_unauthorized_collisions": 50,
+      "original_variant_equal": 50
+    },
+    "langsmith:tokens": {
+      "tasks": 50,
+      "variant_unauthorized_collisions": 50,
+      "original_unauthorized_collisions": 0,
+      "original_variant_equal": 0
+    },
+    "langsmith:canonical_tokens": {
+      "tasks": 50,
+      "variant_unauthorized_collisions": 0,
+      "original_unauthorized_collisions": 0,
+      "original_variant_equal": 50
+    }
+  },
+  "api_calls": 0,
+  "local_models": false,
+  "scope": "Controlled spelling intervention on existing archived workflows; same backend destination, not natural frequency."
+}

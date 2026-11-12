@@ -1,0 +1,59 @@
+{
+  "recorded_utc": "2026-11-12T00:43:28.248377+00:00",
+  "commit": "089ed468cf3ed0322acc66b0211f26d9d90dbf60",
+  "selection": "First six numerically sorted v1 task classes with ground_truth containing a state-changing tool call, separately in banking and workspace, based on source definitions before inspecting recorded run contents.",
+  "task_ids": {
+    "banking": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "workspace": [
+      6,
+      7,
+      8,
+      9,
+      12,
+      13
+    ]
+  },
+  "model": "archived gpt-4o-2024-05-13",
+  "conditions": [
+    "no attack",
+    "tool_knowledge injection_task_0"
+  ],
+  "files": [
+    "runs/gpt-4o-2024-05-13/banking/user_task_0/none/none.json",
+    "runs/gpt-4o-2024-05-13/banking/user_task_0/tool_knowledge/injection_task_0.json",
+    "runs/gpt-4o-2024-05-13/banking/user_task_2/none/none.json",
+    "runs/gpt-4o-2024-05-13/banking/user_task_2/tool_knowledge/injection_task_0.json",
+    "runs/gpt-4o-2024-05-13/banking/user_task_3/none/none.json",
+    "runs/gpt-4o-2024-05-13/banking/user_task_3/tool_knowledge/injection_task_0.json",
+    "runs/gpt-4o-2024-05-13/banking/user_task_4/none/none.json",
+    "runs/gpt-4o-2024-05-13/banking/user_task_4/tool_knowledge/injection_task_0.json",
+    "runs/gpt-4o-2024-05-13/banking/user_task_5/none/none.json",
+    "runs/gpt-4o-2024-05-13/banking/user_task_5/tool_knowledge/injection_task_0.json",
+    "runs/gpt-4o-2024-05-13/banking/user_task_6/none/none.json",
+    "runs/gpt-4o-2024-05-13/banking/user_task_6/tool_knowledge/injection_task_0.json",
+    "runs/gpt-4o-2024-05-13/workspace/user_task_6/none/none.json",
+    "runs/gpt-4o-2024-05-13/workspace/user_task_6/tool_knowledge/injection_task_0.json",
+    "runs/gpt-4o-2024-05-13/workspace/user_task_7/none/none.json",
+    "runs/gpt-4o-2024-05-13/workspace/user_task_7/tool_knowledge/injection_task_0.json",
+    "runs/gpt-4o-2024-05-13/workspace/user_task_8/none/none.json",
+    "runs/gpt-4o-2024-05-13/workspace/user_task_8/tool_knowledge/injection_task_0.json",
+    "runs/gpt-4o-2024-05-13/workspace/user_task_9/none/none.json",
+    "runs/gpt-4o-2024-05-13/workspace/user_task_9/tool_knowledge/injection_task_0.json",
+    "runs/gpt-4o-2024-05-13/workspace/user_task_12/none/none.json",
+    "runs/gpt-4o-2024-05-13/workspace/user_task_12/tool_knowledge/injection_task_0.json",
+    "runs/gpt-4o-2024-05-13/workspace/user_task_13/none/none.json",
+    "runs/gpt-4o-2024-05-13/workspace/user_task_13/tool_knowledge/injection_task_0.json"
+  ],
+  "purpose": "Assess whether observed traces support additional authorization relationships, distinguish missing/untrusted raw evidence from sanitizer-attributable loss, and retain alternative evidence and unsuccessful attacks.",
+  "outcome_rule": "Do not treat benchmark attack success as recipient-authorization truth. First manually establish action arguments, tool success, and visible policy evidence; only add a bounded reproducible claim if it can be judged without hidden labels.",
+  "stop_rule": "Do not expand if the pilot adds only repeated email-equality examples or raw policy evidence is generally insufficient; preserve pilot and report limitations.",
+  "api_calls": 0,
+  "local_models": false
+}

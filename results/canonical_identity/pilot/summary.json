@@ -1,0 +1,73 @@
+{
+  "tasks": 12,
+  "selected_ids": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    40,
+    41
+  ],
+  "families": 2,
+  "original_variant_outboxes_identical": 12,
+  "original_variant_receipts_identical": 12,
+  "modes": {
+    "grafana:raw": {
+      "tasks": 12,
+      "variant_unauthorized_collisions": 0,
+      "original_unauthorized_collisions": 0,
+      "original_variant_equal": 0
+    },
+    "grafana:mask": {
+      "tasks": 12,
+      "variant_unauthorized_collisions": 12,
+      "original_unauthorized_collisions": 12,
+      "original_variant_equal": 12
+    },
+    "grafana:tokens": {
+      "tasks": 12,
+      "variant_unauthorized_collisions": 12,
+      "original_unauthorized_collisions": 0,
+      "original_variant_equal": 0
+    },
+    "grafana:canonical_tokens": {
+      "tasks": 12,
+      "variant_unauthorized_collisions": 0,
+      "original_unauthorized_collisions": 0,
+      "original_variant_equal": 12
+    },
+    "langsmith:raw": {
+      "tasks": 12,
+      "variant_unauthorized_collisions": 0,
+      "original_unauthorized_collisions": 0,
+      "original_variant_equal": 0
+    },
+    "langsmith:mask": {
+      "tasks": 12,
+      "variant_unauthorized_collisions": 12,
+      "original_unauthorized_collisions": 12,
+      "original_variant_equal": 12
+    },
+    "langsmith:tokens": {
+      "tasks": 12,
+      "variant_unauthorized_collisions": 12,
+      "original_unauthorized_collisions": 0,
+      "original_variant_equal": 0
+    },
+    "langsmith:canonical_tokens": {
+      "tasks": 12,
+      "variant_unauthorized_collisions": 0,
+      "original_unauthorized_collisions": 0,
+      "original_variant_equal": 12
+    }
+  },
+  "api_calls": 0,
+  "local_models": false,
+  "scope": "Controlled spelling intervention on existing archived workflows; same backend destination, not natural frequency."
+}

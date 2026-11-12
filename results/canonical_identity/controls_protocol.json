@@ -1,0 +1,15 @@
+{
+  "status": "Exploratory controls specified after the initial canonical-identity result, before executing these controls.",
+  "tasks": "All 50 previously selected WorkBench tasks; use the same first successful outbound operation.",
+  "controls": [
+    "An unseen unauthorized address on the intended address's domain, verified absent from the original capture.",
+    "Alphabetically first unauthorized address already present before the changed call, where available; report eligibility and all outcomes.",
+    "Add a resolved-recipient field to every successful outbound receipt, taking values in execution order from the actual sandbox outbox. This is a proposed instrumentation control, not existing tool behavior.",
+    "Check canonical aliases do not merge backend-distinct recipients: case, plus suffix, different local part, and different domain.",
+    "A bounded deterministic checker consumes only the LangSmith inputs/outputs, parses supported request templates, uses prior directory bindings, and checks successful outbound calls. It abstains on shared masks and unmatched literal aliases. No references, outbox, task IDs or labels are passed to it."
+  ],
+  "canonicalization": "Exactly the WorkBench normalize_email rule: lowercase the whole address. No tag stripping, whitespace trimming, domain rewriting, or universal claim about email equivalence.",
+  "reporting": "Preserve all results. Distinguish byte equality of scoped ordinal aliases from evidence available under arbitrary keyed pseudonyms. No additional model evaluation is planned.",
+  "api_calls": 0,
+  "local_models": false
+}

@@ -1,0 +1,110 @@
+{
+  "runs/gpt-4o-2024-05-13/banking/user_task_0/none/none.json": {
+    "bytes": 3554,
+    "sha256": "1a3ce69ea37b3869ca97aede045263ecd01437751b2c5c9cb476134dc4344273"
+  },
+  "runs/gpt-4o-2024-05-13/banking/user_task_0/tool_knowledge/injection_task_0.json": {
+    "bytes": 8122,
+    "sha256": "d993421bd3ec3b285dffe558f368afa6cb25c1ccfd9bce58c5586d0e1bd50201"
+  },
+  "runs/gpt-4o-2024-05-13/banking/user_task_2/none/none.json": {
+    "bytes": 4065,
+    "sha256": "e981e06ca71f5cd48c1cfb4960e90014a347e208c6cdd9dff5c978e27a450a6d"
+  },
+  "runs/gpt-4o-2024-05-13/banking/user_task_2/tool_knowledge/injection_task_0.json": {
+    "bytes": 8268,
+    "sha256": "a150587590dbd83ece630403443da7a8060baf4e24d915e349960325c6cc8cc5"
+  },
+  "runs/gpt-4o-2024-05-13/banking/user_task_3/none/none.json": {
+    "bytes": 3604,
+    "sha256": "0d521674b0b2cbe5f4898713cd9a1d5df4901f7af928f24ceee44dcde984573a"
+  },
+  "runs/gpt-4o-2024-05-13/banking/user_task_3/tool_knowledge/injection_task_0.json": {
+    "bytes": 5276,
+    "sha256": "5963874f01398fe8f316c68c28dfe2df0fafaad8c65792293db45470061b5ccd"
+  },
+  "runs/gpt-4o-2024-05-13/banking/user_task_4/none/none.json": {
+    "bytes": 3853,
+    "sha256": "644b8e54185632d12b545eb4a9d67cc29a3cc537fef82b53cd308cfbcee01ed4"
+  },
+  "runs/gpt-4o-2024-05-13/banking/user_task_4/tool_knowledge/injection_task_0.json": {
+    "bytes": 6587,
+    "sha256": "db76b8b4ff5ebae24819dc9f5bc60d0c37062b942631b8f0cb0528c71b9210fc"
+  },
+  "runs/gpt-4o-2024-05-13/banking/user_task_5/none/none.json": {
+    "bytes": 4144,
+    "sha256": "e824ff3aa14c727a1218a816e7ae01d7e13aab7145654a28d53cab9e30c8cc33"
+  },
+  "runs/gpt-4o-2024-05-13/banking/user_task_5/tool_knowledge/injection_task_0.json": {
+    "bytes": 5890,
+    "sha256": "2dad00fefdd0e447815c3d2517978d432cda7d27985538e09930bdc4f3be0e98"
+  },
+  "runs/gpt-4o-2024-05-13/banking/user_task_6/none/none.json": {
+    "bytes": 4126,
+    "sha256": "0797a4ab3fb46d320be614ca2bf58f950439c5de80c906ed406141791a4910fb"
+  },
+  "runs/gpt-4o-2024-05-13/banking/user_task_6/tool_knowledge/injection_task_0.json": {
+    "bytes": 6869,
+    "sha256": "20decbf0a356354fbae6bb0d710cb65f934a8903f5b1e661b763f7d175baf097"
+  },
+  "runs/gpt-4o-2024-05-13/workspace/user_task_6/none/none.json": {
+    "bytes": 4752,
+    "sha256": "d448c988349ac6eb2360f6b351481e20508de3bdcc15fa9d946136fade5bd27f"
+  },
+  "runs/gpt-4o-2024-05-13/workspace/user_task_6/tool_knowledge/injection_task_0.json": {
+    "bytes": 7779,
+    "sha256": "105e70431a9ebda890bb55801b3b162d0dfaa4046832a3230fd6704d30c687db"
+  },
+  "runs/gpt-4o-2024-05-13/workspace/user_task_7/none/none.json": {
+    "bytes": 5495,
+    "sha256": "7da1945d78509001be7f9dea23a89852d728804dba13a794edff90fe6d989a61"
+  },
+  "runs/gpt-4o-2024-05-13/workspace/user_task_7/tool_knowledge/injection_task_0.json": {
+    "bytes": 5538,
+    "sha256": "c96e0b1e3c45bdfc612f766fe7946f183b94f4876ad700d8e4732b73a57b2ae1"
+  },
+  "runs/gpt-4o-2024-05-13/workspace/user_task_8/none/none.json": {
+    "bytes": 4204,
+    "sha256": "c1d2491e9b5b9db2d3fccd6e2e5af508bdbe9c3aebd887881d4bbcf5bbcc8da4"
+  },
+  "runs/gpt-4o-2024-05-13/workspace/user_task_8/tool_knowledge/injection_task_0.json": {
+    "bytes": 7767,
+    "sha256": "54e2f24ce626281b7eef5c8d29de49170f60d073c7bbb2cd791d3cf5ef4780cb"
+  },
+  "runs/gpt-4o-2024-05-13/workspace/user_task_9/none/none.json": {
+    "bytes": 5037,
+    "sha256": "699817b5a9340666562c2fc223c95f820267a84dc676de163c36b03e9ab13b7d"
+  },
+  "runs/gpt-4o-2024-05-13/workspace/user_task_9/tool_knowledge/injection_task_0.json": {
+    "bytes": 7967,
+    "sha256": "8398320d6dfa4bcbdfeb0c8bead29a464d6bf80ea3259c12cc2b80bbcebe20f4"
+  },
+  "runs/gpt-4o-2024-05-13/workspace/user_task_12/none/none.json": {
+    "bytes": 4803,
+    "sha256": "550fcd36c153c558979a9377f09e51a9c95ca6548eed718beed4e4b7bccd7867"
+  },
+  "runs/gpt-4o-2024-05-13/workspace/user_task_12/tool_knowledge/injection_task_0.json": {
+    "bytes": 6344,
+    "sha256": "be5245b955dbc817288f6bf56be66c72f365ea7e8e5ac499c2f023817bb3e52f"
+  },
+  "runs/gpt-4o-2024-05-13/workspace/user_task_13/none/none.json": {
+    "bytes": 17402,
+    "sha256": "54feb89974a1a5b8e9b75063f13b52c956ac8393df33b8f52201e8bab9798d06"
+  },
+  "runs/gpt-4o-2024-05-13/workspace/user_task_13/tool_knowledge/injection_task_0.json": {
+    "bytes": 20442,
+    "sha256": "886197014e8df61eae0e0feceb28f1e7f2ff140a0a582057c15bda14bd3c29ff"
+  },
+  "src/agentdojo/default_suites/v1/tools/cloud_drive_client.py": {
+    "bytes": 5577,
+    "sha256": "19376d95731c46477037986319bc8522b4bc96f4924e730b11906df23fc00b93"
+  },
+  "src/agentdojo/default_suites/v1/tools/banking_client.py": {
+    "bytes": 5137,
+    "sha256": "0e4273f521db7ff6d5e7f7f552e917b11940102abd932aea8a2998b517441b42"
+  },
+  "src/agentdojo/default_suites/v1/tools/calendar_client.py": {
+    "bytes": 10237,
+    "sha256": "5d551339fb87237dd1414a003b26f4f851dbdd2b0826225025e44f16420add22"
+  }
+}

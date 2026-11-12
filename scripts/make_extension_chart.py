@@ -2,17 +2,19 @@
 import json
 from pathlib import Path
 from reportlab.pdfgen import canvas
+from embedded_fonts import register_fonts
+register_fonts()
 from reportlab.lib.colors import HexColor
 
-from paths import P as RESULTS, FIGURES as P
+from paths import P as R, FIGURES as P
 P.mkdir(parents=True, exist_ok=True)
 COLORS=[HexColor('#28776f'),HexColor('#b37329'),HexColor('#d6dade'),HexColor('#747b83')]
 def text(c,x,y,s,size=8.5):
     c.setFillColor(HexColor('#202020'));c.setFont('Times-Roman',size);c.drawString(x,y,s)
 
 def main():
-    summary=json.loads((RESULTS/'extension_summary.json').read_text());assert summary['complete']
-    economy=json.loads((RESULTS/'economy_summary.json').read_text());assert economy['complete']
+    summary=json.loads((R/'extension_summary.json').read_text());assert summary['complete']
+    economy=json.loads((R/'economy_summary.json').read_text());assert economy['complete']
     summary['cells'].update(economy['cells'])
     c=canvas.Canvas(str(P/'warning-results.pdf'),pagesize=(252,305))
     c.translate(0,24)

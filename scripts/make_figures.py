@@ -2,6 +2,8 @@
 import json
 from pathlib import Path
 from reportlab.pdfgen import canvas
+from embedded_fonts import register_fonts
+register_fonts()
 from reportlab.lib.colors import HexColor,black
 
 from paths import P as R, FIGURES as P

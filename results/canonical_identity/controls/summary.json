@@ -1,0 +1,235 @@
+{
+  "tasks": 50,
+  "collisions": {
+    "grafana:native:raw:same_domain": {
+      "pairs": 50,
+      "collisions": 0
+    },
+    "grafana:native:mask:same_domain": {
+      "pairs": 50,
+      "collisions": 50
+    },
+    "grafana:native:tokens:same_domain": {
+      "pairs": 50,
+      "collisions": 50
+    },
+    "grafana:native:canonical_tokens:same_domain": {
+      "pairs": 50,
+      "collisions": 0
+    },
+    "grafana:resolved:raw:same_domain": {
+      "pairs": 50,
+      "collisions": 0
+    },
+    "grafana:resolved:mask:same_domain": {
+      "pairs": 50,
+      "collisions": 50
+    },
+    "grafana:resolved:tokens:same_domain": {
+      "pairs": 50,
+      "collisions": 0
+    },
+    "grafana:resolved:canonical_tokens:same_domain": {
+      "pairs": 50,
+      "collisions": 0
+    },
+    "langsmith:native:raw:same_domain": {
+      "pairs": 50,
+      "collisions": 0
+    },
+    "langsmith:native:mask:same_domain": {
+      "pairs": 50,
+      "collisions": 50
+    },
+    "langsmith:native:tokens:same_domain": {
+      "pairs": 50,
+      "collisions": 50
+    },
+    "langsmith:native:canonical_tokens:same_domain": {
+      "pairs": 50,
+      "collisions": 0
+    },
+    "langsmith:resolved:raw:same_domain": {
+      "pairs": 50,
+      "collisions": 0
+    },
+    "langsmith:resolved:mask:same_domain": {
+      "pairs": 50,
+      "collisions": 50
+    },
+    "langsmith:resolved:tokens:same_domain": {
+      "pairs": 50,
+      "collisions": 0
+    },
+    "langsmith:resolved:canonical_tokens:same_domain": {
+      "pairs": 50,
+      "collisions": 0
+    },
+    "grafana:native:raw:seen_recipient": {
+      "pairs": 40,
+      "collisions": 0
+    },
+    "grafana:native:mask:seen_recipient": {
+      "pairs": 40,
+      "collisions": 40
+    },
+    "grafana:native:tokens:seen_recipient": {
+      "pairs": 40,
+      "collisions": 0
+    },
+    "grafana:native:canonical_tokens:seen_recipient": {
+      "pairs": 40,
+      "collisions": 0
+    },
+    "grafana:resolved:raw:seen_recipient": {
+      "pairs": 40,
+      "collisions": 0
+    },
+    "grafana:resolved:mask:seen_recipient": {
+      "pairs": 40,
+      "collisions": 40
+    },
+    "grafana:resolved:tokens:seen_recipient": {
+      "pairs": 40,
+      "collisions": 0
+    },
+    "grafana:resolved:canonical_tokens:seen_recipient": {
+      "pairs": 40,
+      "collisions": 0
+    },
+    "langsmith:native:raw:seen_recipient": {
+      "pairs": 40,
+      "collisions": 0
+    },
+    "langsmith:native:mask:seen_recipient": {
+      "pairs": 40,
+      "collisions": 40
+    },
+    "langsmith:native:tokens:seen_recipient": {
+      "pairs": 40,
+      "collisions": 0
+    },
+    "langsmith:native:canonical_tokens:seen_recipient": {
+      "pairs": 40,
+      "collisions": 0
+    },
+    "langsmith:resolved:raw:seen_recipient": {
+      "pairs": 40,
+      "collisions": 0
+    },
+    "langsmith:resolved:mask:seen_recipient": {
+      "pairs": 40,
+      "collisions": 40
+    },
+    "langsmith:resolved:tokens:seen_recipient": {
+      "pairs": 40,
+      "collisions": 0
+    },
+    "langsmith:resolved:canonical_tokens:seen_recipient": {
+      "pairs": 40,
+      "collisions": 0
+    }
+  },
+  "checker": {
+    "native:raw:variant": {
+      "records": 50,
+      "correct": 50
+    },
+    "native:raw:same_domain": {
+      "records": 50,
+      "correct": 50
+    },
+    "native:mask:variant": {
+      "records": 50,
+      "abstain": 50
+    },
+    "native:mask:same_domain": {
+      "records": 50,
+      "abstain": 50
+    },
+    "native:tokens:variant": {
+      "records": 50,
+      "abstain": 50
+    },
+    "native:tokens:same_domain": {
+      "records": 50,
+      "abstain": 50
+    },
+    "native:canonical_tokens:variant": {
+      "records": 50,
+      "correct": 50
+    },
+    "native:canonical_tokens:same_domain": {
+      "records": 50,
+      "correct": 50
+    },
+    "resolved:raw:variant": {
+      "records": 50,
+      "correct": 50
+    },
+    "resolved:raw:same_domain": {
+      "records": 50,
+      "correct": 50
+    },
+    "resolved:mask:variant": {
+      "records": 50,
+      "abstain": 50
+    },
+    "resolved:mask:same_domain": {
+      "records": 50,
+      "abstain": 50
+    },
+    "resolved:tokens:variant": {
+      "records": 50,
+      "correct": 50
+    },
+    "resolved:tokens:same_domain": {
+      "records": 50,
+      "correct": 50
+    },
+    "resolved:canonical_tokens:variant": {
+      "records": 50,
+      "correct": 50
+    },
+    "resolved:canonical_tokens:same_domain": {
+      "records": 50,
+      "correct": 50
+    },
+    "native:raw:seen_recipient": {
+      "records": 40,
+      "correct": 40
+    },
+    "native:mask:seen_recipient": {
+      "records": 40,
+      "abstain": 40
+    },
+    "native:tokens:seen_recipient": {
+      "records": 40,
+      "abstain": 40
+    },
+    "native:canonical_tokens:seen_recipient": {
+      "records": 40,
+      "correct": 40
+    },
+    "resolved:raw:seen_recipient": {
+      "records": 40,
+      "correct": 40
+    },
+    "resolved:mask:seen_recipient": {
+      "records": 40,
+      "abstain": 40
+    },
+    "resolved:tokens:seen_recipient": {
+      "records": 40,
+      "correct": 40
+    },
+    "resolved:canonical_tokens:seen_recipient": {
+      "records": 40,
+      "correct": 40
+    }
+  },
+  "identity_checks": 36,
+  "api_calls": 0,
+  "local_models": false,
+  "scope": "Exploratory controls; fixed templates, actual backend rule; resolved receipts are proposed instrumentation."
+}

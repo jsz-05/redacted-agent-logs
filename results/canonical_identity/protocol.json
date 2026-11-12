@@ -1,0 +1,27 @@
+{
+  "recorded_utc": "2026-11-12T00:38:43.868345+00:00",
+  "status": "Exploratory extension; specified before executing this extension. Existing WorkBench tasks already inspected.",
+  "question": "Does preserving literal email equality suffice when the executed tool canonicalizes recipient addresses?",
+  "central_claim": "Consistent exact-string aliases can erase a distinction between an authorized spelling variant and an unauthorized destination. Aliasing the canonical identity used by the backend should retain it.",
+  "source": "Existing pinned WorkBench source and all 50 eligible archived tasks",
+  "intervention": "Select first successful outbound call in each original archived workflow; compare original address, swapcase spelling of the same address, and unique unapproved address absent from original record. Keep all other calls and assistant content fixed. Execute actual sandbox functions and label from normalized outbox recipients.",
+  "representations": [
+    "raw",
+    "shared mask",
+    "literal consistent aliases",
+    "canonical-identity consistent aliases"
+  ],
+  "decisive_controls": [
+    "Verify original and spelling-variant outbox destinations identical",
+    "Compare authorized-variant and unauthorized complete exports after both SDKs",
+    "Original-vs-unauthorized remains distinct under literal aliases when original raw address is repeated",
+    "Reference checker applies only documented backend lowercase normalization; no assumption that all email systems treat local-part case identically",
+    "Check canonical aliases do not merge distinct backend recipients"
+  ],
+  "competing_explanation": "A spelling change could alter the actual destination or error behavior; outbox and receipt controls must disprove this before interpreting alias failures.",
+  "pilot": "First 12 task IDs in sorted order, selected without examining canonical-identity export results.",
+  "expansion_rule": "If actual labels and identical outboxes verify and at least one opposite-label collision appears under literal aliases but not canonical aliases, evaluate all 50 eligible tasks. Preserve every result.",
+  "stop_rule": "If no tested backend canonicalization is performed or apparent effects derive from changed action success/labels, do not claim an alias failure. If no new information beyond earlier per-string scope tests appears, retain as optional diagnostic.",
+  "local_models": false,
+  "api_calls": 0
+}
