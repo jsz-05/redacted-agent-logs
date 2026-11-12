@@ -77,7 +77,9 @@ def example():
     c.save()
 
 def method():
-    c=canvas.Canvas(str(P/'method.pdf'),pagesize=(516,153));c.setTitle('Paired replay, native export, and separate evidence and decision tests')
+    c=canvas.Canvas(str(P/'method.pdf'),pagesize=(516,163));c.setTitle('Paired replay, native export, and separate evidence and decision tests')
+    # Leave room below the caption for italic descenders at printed size.
+    c.translate(0,10)
     for x,title,lines in [(0,'1. Select tasks',['90 archived email tasks','50 send/forward tasks']), (132,'2. Replay actions',['Original + changed recipient','50 paired executions']), (264,'3. Export logs',['Grafana and LangSmith','Aggregate + per-step']), (396,'4a. Compare content',['Paired export equality','Raw / masked / aliased'])]:
         box(c,x,91,120,56,title,lines,kind={0:'document',132:'play',264:'export',396:'compare'}[x],color=TEAL if x==396 else BLUE)
     for x in [120,252,384]:arrow(c,x,119,x+12,119)
