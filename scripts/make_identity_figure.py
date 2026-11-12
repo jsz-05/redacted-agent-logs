@@ -28,28 +28,21 @@ def main():
         directory = json.loads(next(s['receipt'] for s in steps if s['name'] == 'company_directory.find_email_address'))[0]
         recipient = next(s['arguments']['recipient'] for s in steps if s['name'] == 'email.send_email')
         return directory, recipient
-    runs = next(r['runs'] for r in json.loads((R/'canonical_identity/controls/runs.json').read_text()) if r['task_id'] == 20)
-    c = canvas.Canvas(str(P/'backend-identity.pdf'), pagesize=(516,174))
+    c = canvas.Canvas(str(P/'backend-identity.pdf'), pagesize=(252,132))
     c.setTitle('Same tool destination, different spelling: where literal aliases fail')
-    text(c, 3, 160, 'Directory result: '+values('raw','variant')[0], 10, color=BLUE)
-    text(c, 3, 146, 'In each log, the directory address is EMAIL_1. The two rows below are separate executions.', 9.5)
-    cols = [3, 181, 350, 436]
-    for x,s in zip(cols, ['Recorded send argument','Actual outbox destination','Literal alias','Canonical alias']):
-        text(c,x,125,s,9.5)
-    c.setStrokeColor(RULE); c.setLineWidth(.5); c.line(3,119,513,119)
-    for condition, title, top, color in [('variant','Authorized spelling variant',104,TEAL), ('same_domain','Unauthorized recipient',62,AMBER)]:
-        text(c,3,top,title,9.3,color=color)
+    text(c, 3, 120, 'Directory: '+values('raw','variant')[0], 9.3, color=BLUE)
+    text(c, 3, 107, 'This address receives EMAIL_1 in each log.', 9)
+    for x,s in [(3,'Recorded send argument'),(153,'Literal'),(202,'Canonical')]:
+        text(c,x,87,s,9)
+    c.setStrokeColor(RULE); c.setLineWidth(.5); c.line(3,81,249,81)
+    for condition, title, top, color in [('variant','Authorized case variant',68,TEAL), ('same_domain','New unauthorized recipient',33,AMBER)]:
+        text(c,3,top,title,9,color=color)
         arg = values('raw',condition)[1]
-        out = runs[condition]['outbox_delta'][0]['sender/recipient']
-        text(c,3,top-14,arg,8.1,'Courier')
-        text(c,181,top-14,out,8.1,'Courier')
-        for mode,x in [('tokens',350),('canonical_tokens',436)]:
+        text(c,3,top-13,arg,8,'Courier')
+        for mode,x in [('tokens',153),('canonical_tokens',202)]:
             token = values(mode,condition)[1]
-            text(c,x+6,top-14,token,10,'Courier',color)
-    c.setStrokeColor(RULE);c.line(3,31,513,31)
-    text(c,3,16,'The tool lowercases the address before delivery; its normal receipt only confirms success.',9.3)
-    text(c,350,16,'Same label',9,color=AMBER)
-    text(c,436,16,'Different labels',9,color=TEAL)
+            text(c,x,top-13,token,8.5,'Courier',color)
+    c.setStrokeColor(RULE);c.line(3,9,249,9)
     c.save()
 
 
