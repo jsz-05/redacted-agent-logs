@@ -53,6 +53,7 @@ model or network calls. It compares literal path aliases, path normalization,
 filesystem-aware aliases, and object-identity receipts. The controls retain
 cases where the raw log already lacks evidence and where different file contents
 keep the records distinguishable.
+The default check also recomputes all three 72/72 file-identity checker results.
 
 ```sh
 python3 scripts/file_tool_extension/verify_saved.py

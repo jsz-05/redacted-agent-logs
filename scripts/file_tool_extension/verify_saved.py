@@ -17,6 +17,7 @@ def main():
     rows = [json.loads(line) for line in (args.results/'exports.jsonl').read_text().splitlines()]
     summary = json.loads((args.results/'summary.json').read_text())
     groups = defaultdict(list)
+    checker_counts = defaultdict(lambda: dict(records=0, correct=0))
     for row in rows:
         trace = row['trace']
         assert len(trace) == 2
@@ -37,9 +38,18 @@ def main():
             # This comparison uses exported fields alone, without sidecar truth.
             verdict = inputs['approved_object'] == outputs['opened_object']
             assert verdict == row['checker_authorized'] == expected
+            checker_counts[row['mode']]['records'] += 1
+            checker_counts[row['mode']]['correct'] += verdict == expected
         else:
             assert 'approved_object' not in inputs and 'opened_object' not in outputs
             assert row['checker_authorized'] is None
+            if row['mode'] == 'stat':
+                # The aliases encode file identity; the decision uses only
+                # their equality in the exported input, not the sidecar label.
+                verdict = inputs['approved_file'] == inputs['arguments']['path']
+                assert verdict == expected, 'stat aliases do not support the recorded decision'
+                checker_counts['stat']['records'] += 1
+                checker_counts['stat']['correct'] += verdict == expected
         groups[(row['family'], row['content'], row['mode'], row['instance'])].append(row)
     counts = {}
     for (family, content, mode, index), pair in groups.items():
@@ -60,7 +70,13 @@ def main():
     assert summary['native_events'] == 2*len(rows)
     assert summary['distinct_pairs'] == len({(r['family'], r['content'], r['instance']) for r in rows})
     assert summary['api_calls'] == summary['cost_usd'] == 0
+    analysis_path = args.results/'analysis.json'
+    if analysis_path.exists():
+        analysis = json.loads(analysis_path.read_text())
+        assert dict(checker_counts) == analysis['same_record_checkers']
     print(f"Verified {len(rows)} executed reads, {len(groups)} representation pairs, and every saved count.")
+    for mode, count in sorted(checker_counts.items()):
+        print(f"{mode}: {count['correct']}/{count['records']} exported-field decisions verified.")
 
 
 if __name__ == '__main__':
